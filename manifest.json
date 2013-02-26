@@ -1,0 +1,20 @@
+{
+    // Require!
+    "manifest_version": 2,
+    "name": "runAirPlayer",
+    "version": "1.0",
+
+    // Recommend.
+    "description": "run air player.",
+    "icons": {
+        "16": "icons/icon_16x16.png"
+    },
+
+    "content_scripts": [
+    {
+        "matches": ["http://hogehoge.jp/*"],
+        "run_at": "document_end",
+        "js": ["sample1.js"]
+    }
+    ]
+}
